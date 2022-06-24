@@ -1,59 +1,89 @@
-import { Search, Person, Chat, Notifications } from "@mui/icons-material";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import { ImageListItem } from "@mui/material";
-import LogoutIcon from '@mui/icons-material/Logout';
+import * as React from 'react';
+import { styled, alpha } from '@mui/material/styles';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import InputBase from '@mui/material/InputBase';
+import MenuIcon from '@mui/icons-material/Menu';
+import SearchIcon from '@mui/icons-material/Search';
 
-export default function SearchComp() {
+const Search = styled('div')(({ theme }) => ({
+    position: 'relative',
+    borderRadius: theme.shape.borderRadius,
+    backgroundColor: alpha(theme.palette.common.white, 0.15),
+    '&:hover': {
+        backgroundColor: alpha(theme.palette.common.white, 0.25),
+    },
+    marginLeft: 0,
+    width: '100%',
+    [theme.breakpoints.up('sm')]: {
+        marginLeft: theme.spacing(1),
+        width: 'auto',
+    },
+}));
 
+const SearchIconWrapper = styled('div')(({ theme }) => ({
+    padding: theme.spacing(0, 2),
+    height: '100%',
+    position: 'absolute',
+    pointerEvents: 'none',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+}));
 
+const StyledInputBase = styled(InputBase)(({ theme }) => ({
+    color: 'inherit',
+    '& .MuiInputBase-input': {
+        padding: theme.spacing(1, 1, 1, 0),
+        // vertical padding + font size from searchIcon
+        paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+        transition: theme.transitions.create('width'),
+        width: '100%',
+        [theme.breakpoints.up('sm')]: {
+            width: '12ch',
+            '&:focus': {
+                width: '20ch',
+            },
+        },
+    },
+}));
 
-
+export default function SearchAppBar() {
     return (
-        <Box className="h-12 w-full bg-violet-700 flex items-center sticky top-0">
-            <Box className="flex-3 mr-96">
-                <Box to="/home">
-                    <Typography variant="span" className="text-2xl ml-5 text-zinc-50 cursor-pointer	">Kaholas</Typography>
-                </Box>
-            </Box>
-            <Box className="flex-5">
-                <Box className="w-full h8 bg-white rounded-2xl items-center flex object-cover">
-                    <Search className="text-xl ml-2.5" />
+        <Box sx={{ flexGrow: 1 }}>
+            <AppBar position="static">
+                <Toolbar>
+                    <IconButton
+                        size="large"
+                        edge="start"
+                        color="inherit"
+                        aria-label="open drawer"
+                        sx={{ mr: 2 }}
+                    >
+                        <MenuIcon />
+                    </IconButton>
                     <Typography
-                        size="small"
-                        variant="input"
-                        component="input"
-                        placeholder="Search for friend, post or video"
-                        className="border-none w-9/12"
-                    />
-                </Box>
-            </Box>
-            <Box className="flex-4 flex items-center justify-around	text-white float-right">
-                <Box className="ml-24">
-                    <Typography className="mr-2.5 cursor-pointer relative">Homepage</Typography>
-                    {/* <Typography className="topbarLink">Timeline</Typography> */}
-                </Box>
-                <Box className="flex">
-                    <Box className="mr-3.5 cursor-pointer relative">
-                        <Person />
-                        <Typography className="w-3.5 h-3.5 bg-red-500 rounded-3xl text-white absolute flex items-center justify-center text-xs -top-1">1</Typography>
-                    </Box>
-                    <Box className="mr-3.5 cursor-pointer relative">
-                        <Chat />
-                        <Typography className="w-3.5 h-3.5 bg-red-500 rounded-3xl text-white absolute flex items-center justify-center text-xs -top-1">2</Typography>
-                    </Box>
-                    <Box className="mr-3.5 cursor-pointer relative">
-                        <Notifications />
-                        <Typography className="w-3.5 h-3.5 bg-red-500 rounded-3xl text-white absolute flex items-center justify-center text-xs -top-1">1</Typography>
-                    </Box>
-                </Box>
-                <LogoutIcon
-                    sx={{
-                        cursor: "pointer"
-                    }}
-                />
-                {/* <ImageListItem component="img" src="/profile.jpeg" alt="" className="topbarImg" /> */}
-            </Box>
+                        variant="h6"
+                        noWrap
+                        component="div"
+                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+                    >
+                        Kaholas
+                    </Typography>
+                    <Search>
+                        <SearchIconWrapper>
+                            <SearchIcon />
+                        </SearchIconWrapper>
+                        <StyledInputBase
+                            placeholder="Search…"
+                            inputProps={{ 'aria-label': 'search' }}
+                        />
+                    </Search>
+                </Toolbar>
+            </AppBar>
         </Box>
     );
 }
