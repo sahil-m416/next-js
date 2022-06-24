@@ -9,7 +9,7 @@ export default function Course({ courseDetails }) {
     return (
         <div className="px-5 rounded-xl bg-white my-14">
             <div className="">
-                <h1 className="text-2xl font-bold font-sans pt-5">{courseDetails.courseTitle}</h1>
+                <h1 className="text-2xl font-bold font-sans pt-5 font-mono">{courseDetails.courseTitle}</h1>
                 <p className="pb-3 pt-1 font-bold text-slate-700">{courseDetails.singleDay ? "Single Day Course" : "MultiDay Course"}</p>
             </div>
             <div className="flex flex-row pt-10 justify-between">

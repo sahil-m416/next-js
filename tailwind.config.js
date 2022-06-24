@@ -6,6 +6,9 @@ module.exports = {
   ],
   content: [],
   theme: {
+    fontFamily:{
+      'mono' :['Josephine Sans', 'sans-serif']
+    },
     extend: {},
   },
   plugins: [],
