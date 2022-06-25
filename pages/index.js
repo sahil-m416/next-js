@@ -18,7 +18,6 @@ export default function Home() {
                 </Grid>
 
                 <Grid item sm={7}>
-                    
 
 
 
