@@ -18,6 +18,7 @@ export default function Home() {
                     {/* <Sidebar /> */}
                 </Grid>
                 <Grid item sm={7}>
+                  
                   {
                     course.map((c) =>(
                       <Course courseDetails={c} key={c.id}/>
