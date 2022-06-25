@@ -1,20 +1,36 @@
 
 const course = [
     {
-        id: 1,
+        id: 0,
         courseTitle : "Summer Art Camp! 5 Days of Artists and Painting Monet,Van Gogh, Matisse , & More",
         singleDay : false,
         description: "In this 5 day class we will explore artists Monet, Matisse, Van Gogh, among others and then recreate paintings using crayon and watercolor. Students will have fun learning about the artists & creating their own art inspired by their work.",
-        authorName : "Kimberley R Moseler",
+        author : "Kimberley R Moseler",
         authorImg: "/assets/profile.jpeg",
         teacherReviews: 467,
         classReviews: 5,
         completedBy: 21,
-        courseImg: "/assets/download.jpeg"
+        courseImg: "/assets/download.jpeg",
+        courseRating : 4,
+        teacherRating: 5
+    },
+    {
+        id: 1,
+        courseTitle : "A complete Next JS Bootcamp with Tailwind",
+        singleDay : false,
+        description: "In this 5 day class we will explore artists Monet, Matisse, Van Gogh, among others and then recreate paintings using crayon and watercolor. Students will have fun learning about the artists & creating their own art inspired by their work.",
+        author : "Kimberley R Moseler",
+        authorImg: "/assets/profile.jpeg",
+        teacherReviews: 467,
+        classReviews: 5,
+        completedBy: 21,
+        courseImg: "/assets/next.webp",
+        courseRating : 4,
+        teacherRating: 5
     },
     {
         id: 2,
-        courseTitle : "Summer Art Camp! 5 Days of Artists and Painting Monet,Van Gogh, Matisse , & More",
+        courseTitle : "Learn Python: The Complete Python Programming Course",
         singleDay : false,
         description: "In this 5 day class we will explore artists Monet, Matisse, Van Gogh, among others and then recreate paintings using crayon and watercolor. Students will have fun learning about the artists & creating their own art inspired by their work.",
         author : "Kimberley R Moseler",
@@ -22,11 +38,13 @@ const course = [
         teacherReviews: 467,
         classReviews: 5,
         completedBy: 21,
-        courseImg: "/assets/download.jpeg"
+        courseImg: "/assets/python.webp",
+        courseRating : 4,
+        teacherRating: 5
     },
     {
         id: 3,
-        courseTitle : "Summer Art Camp! 5 Days of Artists and Painting Monet,Van Gogh, Matisse , & More",
+        courseTitle : "100 Days of Code: The complete Javascript guide ",
         singleDay : false,
         description: "In this 5 day class we will explore artists Monet, Matisse, Van Gogh, among others and then recreate paintings using crayon and watercolor. Students will have fun learning about the artists & creating their own art inspired by their work.",
         author : "Kimberley R Moseler",
@@ -34,11 +52,13 @@ const course = [
         teacherReviews: 467,
         classReviews: 5,
         completedBy: 21,
-        courseImg: "/assets/download.jpeg"
+        courseImg: "/assets/javascript.webp",
+        courseRating : 4,
+        teacherRating: 5
     },
     {
         id: 4,
-        courseTitle : "Summer Art Camp! 5 Days of Artists and Painting Monet,Van Gogh, Matisse , & More",
+        courseTitle : "The Complete 2022 Web Development Bootcamp by Dr. Angela Yu",
         singleDay : false,
         description: "In this 5 day class we will explore artists Monet, Matisse, Van Gogh, among others and then recreate paintings using crayon and watercolor. Students will have fun learning about the artists & creating their own art inspired by their work.",
         author : "Kimberley R Moseler",
@@ -46,7 +66,9 @@ const course = [
         teacherReviews: 467,
         classReviews: 5,
         completedBy: 21,
-        courseImg: "/assets/download.jpeg"
+        courseImg: "/assets/download.jpeg",
+        courseRating : 4,
+        teacherRating: 5
     },
     {
         id: 5,
@@ -58,7 +80,9 @@ const course = [
         teacherReviews: 467,
         classReviews: 5,
         completedBy: 21,
-        courseImg: "/assets/download.jpeg"
+        courseImg: "/assets/download.jpeg",
+        courseRating : 4,
+        teacherRating: 5
     },
     {
         id: 6,
@@ -70,7 +94,9 @@ const course = [
         teacherReviews: 467,
         classReviews: 5,
         completedBy: 21,
-        courseImg: "/assets/download.jpeg"
+        courseImg: "/assets/download.jpeg",
+        courseRating : 4,
+        teacherRating: 5
     },
     {
         id: 7,
@@ -82,7 +108,9 @@ const course = [
         teacherReviews: 467,
         classReviews: 5,
         completedBy: 21,
-        courseImg: "/assets/download.jpeg"
+        courseImg: "/assets/download.jpeg",
+        courseRating : 4,
+        teacherRating: 5
     },
     {
         id: 8,
@@ -94,7 +122,9 @@ const course = [
         teacherReviews: 467,
         classReviews: 5,
         completedBy: 21,
-        courseImg: "/assets/download.jpeg"
+        courseImg: "/assets/download.jpeg",
+        courseRating : 4,
+        teacherRating: 5
     },
 ]
 
