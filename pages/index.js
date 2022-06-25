@@ -11,6 +11,7 @@ import course from "../database/dummyData";
 export default function Home() {
   return (
     <>
+    
     <SearchComp />
         <Grid container className="bg-gray-300 h-full">
                 <Grid item sm={2}>
@@ -23,7 +24,6 @@ export default function Home() {
                     ))
                   }
                 </Grid>
-
             </Grid>
     </>
   )

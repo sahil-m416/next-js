@@ -4,7 +4,6 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShortcutIcon from '@mui/icons-material/Shortcut';
 import StarIcon from '@mui/icons-material/Star';
 
-
 export default function Course({ courseDetails }) {
     return (
         <div className="px-5 rounded-xl bg-white my-14">
