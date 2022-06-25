@@ -1,3 +1,31 @@
+
+# Course Picker Feed (Dynamic Data)
+
+This UI is created by me as a task given by an ed-tech company.
+
+Technologies used are :-
+- Next JS
+- Tailwind CSS
+- Material UI
+
+
+## To run it on your local machine :-
+``` 
+git clone  https://github.com/sahil-m416/next-js.git 
+
+```
+
+then move to the root directory
+
+``` 
+npm install    // To install to dependencies
+npm run dev   //  To start Local Development Server
+
+```
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
