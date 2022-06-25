@@ -16,23 +16,14 @@ export default function Home() {
                 <Grid item sm={2}>
                     {/* <Sidebar /> */}
                 </Grid>
-
                 <Grid item sm={7}>
-
-
-
                   {
                     course.map((c) =>(
                       <Course courseDetails={c} key={c.id}/>
                     ))
                   }
-                  
-
                 </Grid>
 
-                <Grid item sm={3}>
-                    {/* <Rightbar /> */}
-                </Grid>
             </Grid>
     </>
   )
