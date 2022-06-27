@@ -8,11 +8,11 @@ Technologies used are :-
 - Tailwind CSS
 - Material UI
 
-
+# Deployed Version
+👉🏻 https://next-js-dun-phi.vercel.app/
 ## To run it on your local machine :-
 ``` 
 git clone  https://github.com/sahil-m416/next-js.git 
-
 ```
 
 then move to the root directory
